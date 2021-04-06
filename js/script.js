@@ -57,7 +57,7 @@ const quotes = [ //array of quotes - not all had citings and years
 //Generating the quote using random number gen. rounding to 0 since index starts at 0
 function getRandomQuote() {
   const x = Math.floor(Math.random()*quotes.length); //quote amounts can be changed
-  console.log (x);   
+  console.log (x);   //check if random works and that all the quotes are included
  let mess = quotes[x]; //simplify how to call things from the array
  return mess;
 };
@@ -66,7 +66,7 @@ function getRandomQuote() {
     
     var mess = getRandomQuote();
     
-    //to insure no undefined pops up from lack of info
+    //to insure no 'undefined' pops up from lack of info
     if (!mess.year && !mess.citation){ 
       let print = `<p class="quote"> ${mess.quote}</p> <p class="source">By ${mess.source}`;
       document.getElementById('quote-box').innerHTML = print;
