@@ -37,9 +37,8 @@ const quotes = [ //array of quotes - not all had citings and years
     source: 'Johnny Lawrence',
     year: 2020,
     citation:'Cobra Kai'},
-    { quote: "Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.",
-    source: 'Albert Eistein',
-    },
+    {quote: "Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.",
+    source: 'Albert Eistein'},
     {quote: 'Give me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.',
     source: 'Reinhold Niebuhr'},
     {quote: "If you're always trying to be normal, you will never know how amazing you can be." ,
@@ -51,15 +50,14 @@ const quotes = [ //array of quotes - not all had citings and years
     { quote: "If you had everything, you'd have nothing",
     source: 'Smart Cookies',
     citation: 'Minecraft',
-    year: 2020,
-    }
+    year: 2020,}
 ];
 //Generating the quote using random number gen. rounding to 0 since index starts at 0
 function getRandomQuote() {
   const x = Math.floor(Math.random()*quotes.length); //quote amounts can be changed
-  console.log (x);   //check if random works and that all the quotes are included
- let mess = quotes[x]; //simplify how to call things from the array
- return mess;
+ 
+   let mess = quotes[x]; //simplify how to call things from the array
+   return mess;
 };
 
   function printQuote() {
