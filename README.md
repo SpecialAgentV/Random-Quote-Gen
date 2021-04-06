@@ -1,3 +1,3 @@
 # Random Quote Generator
- Quote Generator
+ A simple random quote generator from yours truly. 
 
